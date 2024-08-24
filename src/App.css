@@ -84,3 +84,10 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.title{
+  font-size: 45px;
+  color: #333;
+  font-weight: bold;
+  /* margin: 12px ;  */
+}
