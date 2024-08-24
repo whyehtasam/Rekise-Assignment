@@ -1,6 +1,86 @@
 /* CSS to rotate the custom icon */
-.moving-icon img {
-    transform: rotate(45deg); /* Rotate the icon by 45 degrees */
-    transform-origin: center center; /* Ensure rotation is centered */
-  }
+.custom-icon .rotating-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-out; /* Smooth rotation transition */
+}
+
+.moving-icon{
+  /* opacity: 0; */
+  /* background-color: red; */
+}
   
+  .container-map {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+  }
+
+
+  /* Container for the entire map and info panel */
+.container-map {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Information Panel Styling */
+.info-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f0f0f0; /* Light gray background */
+  border-bottom: 2px solid #ddd; /* Subtle border for separation */
+  margin-bottom: 10px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
+  width: 30%; /* Adjust this to control the number of items per row */
+}
+
+.label {
+  font-weight: bold;
+  color: #333; /* Darker color for labels */
+}
+
+.value {
+  font-size: 1.2em;
+  color: #007bff; /* Blue color for values */
+  margin-top: 5px;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .info-item {
+    width: 45%; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .info-item {
+    width: 100%; /* Stack items vertically on very small screens */
+  }
+}
+
+/* Style for map container */
+.leaflet-container {
+  flex: 1; /* Take up the remaining space */
+  border: 1px solid #ddd; /* Optional border for the map */
+}
+
+.control-button{
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
