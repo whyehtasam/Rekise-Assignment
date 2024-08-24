@@ -1,0 +1,6 @@
+/* CSS to rotate the custom icon */
+.moving-icon img {
+    transform: rotate(45deg); /* Rotate the icon by 45 degrees */
+    transform-origin: center center; /* Ensure rotation is centered */
+  }
+  
